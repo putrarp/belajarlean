@@ -102,7 +102,7 @@
                 <div class="links">
                     <a href="/training">Training</a>
                     |
-                    <a href="https://laracasts.com">Apps</a>
+                    <a href="/apps">Apps</a>
                     |
                     <a href="/kanboard">Kanboard</a>
                 </div>
