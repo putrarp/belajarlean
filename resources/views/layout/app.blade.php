@@ -38,7 +38,7 @@
   
     @include('inc.navbar')
   <div class="container">
-    <br><br><br>
+    <br>
     @yield('content')
   </div>
     @include('inc.footer')
