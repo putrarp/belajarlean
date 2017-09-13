@@ -40,7 +40,7 @@
         </div>
         <br><br>
         <div class="vidcontainer">
-        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/yl4M0EGmwMU" frameborder="0" allowfullscreen></iframe></center>
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/yl4M0EGmwMU" frameborder="0" allowfullscreen class="video"></iframe></center>
         </div>
     </div>
 @endsection
