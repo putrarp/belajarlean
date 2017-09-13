@@ -14,6 +14,8 @@
 Route::get('/', 'PagesController@index');
 Route::get('/training', 'PagesController@training');
 Route::get('/training/lean', 'PagesController@lean');
+Route::get('/training/tpm', 'PagesController@tpm');
+Route::get('/training/sixsigma', 'PagesController@sixsigma');
 Route::get('/kanboard', function () {
     //return view('welcome');
     return redirect()->away('http://127.0.0.1/belajarlean/kanboard');

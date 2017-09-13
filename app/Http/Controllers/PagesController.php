@@ -20,7 +20,15 @@ class PagesController extends Controller
         return view('pages.lean');
     }
 
-    public function kanboard(){
-        return view('kanboard');
+    public function tpm(){
+        return view('pages.tpm');
     }
+
+    public function sixsigma(){
+        return view('pages.sixsigma');
+    }
+
+    /*public function kanboard(){
+        return view('kanboard');
+    }*/
 }

@@ -1,6 +1,13 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
     <head>
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +53,7 @@
             }
 
             .title {
-                font-size: 84px;
+                font-size: 50px;
             }
 
             .links > a {
@@ -94,7 +101,9 @@
 
                 <div class="links">
                     <a href="/training">Training</a>
+                    |
                     <a href="https://laracasts.com">Apps</a>
+                    |
                     <a href="/kanboard">Kanboard</a>
                 </div>
             </div>

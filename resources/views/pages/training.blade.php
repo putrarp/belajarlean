@@ -7,7 +7,7 @@
     <div class="links">
             <a href="/training/lean">Lean</a>
             |
-            <a href="/training/TPM"> TPM </a>
+            <a href="/training/tpm"> TPM </a>
             |
             <a href="/training/sixsigma"> Six Sigma </a>
     </div>
