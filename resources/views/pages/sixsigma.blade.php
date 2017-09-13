@@ -38,8 +38,9 @@
 
 
         </div>
-        <br><br>
-        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/yl4M0EGmwMU" frameborder="0" allowfullscreen></iframe></center>
-
+        <div class="vidcontainer">
+        <center><iframe width="560" height="315" src="https://www.youtube.com/embed/yl4M0EGmwMU" frameborder="0" allowfullscreen class="video"></iframe></center>
+        </div>
     </div>
+    <br><br>
 @endsection

@@ -1,7 +1,6 @@
 @extends('layout.app')
 
 @section('content')
-    <div class="container">
         <center><h1> Lean Supply Chain</h1></center>
         <div align="justify">
         
@@ -36,11 +35,10 @@
         <h4>Conclusion</h4>
         Lean supply chain management requires businesses to examine every process in their supply chain and identify areas that are using unnecessary resources, which can be measured in dollars, time or raw materials. This will improve the company's competitiveness as well as improve the company's overall profitability.
 
-
         </div>
         <br><br>
         <div class="vidcontainer">
         <center><iframe width="560" height="315" src="https://www.youtube.com/embed/yl4M0EGmwMU" frameborder="0" allowfullscreen class="video"></iframe></center>
         </div>
-    </div>
+    <br><br>
 @endsection
