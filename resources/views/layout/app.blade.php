@@ -4,7 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
     <style>
     .vidcontainer {
     position: relative;
@@ -23,11 +24,14 @@
     padding: 10px 0;
     color: #999;
     text-align: center;
-    background-color: #343a40!important;
-}
+    background-color: #343a40!important; 
+    }
+
+    body{
+    font-family : Raleway!important;
+    }
     </style>
-    
-    <!-- Bootstrap CSS -->
+        <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
   <body>
