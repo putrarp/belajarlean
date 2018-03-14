@@ -1,1 +1,5 @@
-DirectoryIndex index.php
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^belajarlean.com/crossword/[nc]
+RewriteRule ^(.*)$ http://www.belajarlean.com/crossword//$1 [r=301,nc]
