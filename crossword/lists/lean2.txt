@@ -1,0 +1,15 @@
+#title: LEAN 2
+Implementation:The process of putting a decision or plan into execution
+Waiting:Waste because of not balance workload between operators
+Engagement:People involvement or commitment
+Leadtime:Amount of time that elapses between process start time and it's completion time
+Leader:Role who understands the process of kaizen and make sure can achieve the goal
+Roadmap:Training, discovery, implementation, validation and celebration is a … of Kaizen
+Change:"KAI" on "KAIZEN" meaning in English
+Brainstorming:A spontaneous group discussion to produce ideas and ways of solving problem
+Cycletime:Process time
+Goal:Desired result
+People:The one who need an engagement to achieve goal
+Jidoka:Autonomation to build in quality
+Principle:Continuous improvement is … of Lean
+Innovation:a new method, idea, product, etc

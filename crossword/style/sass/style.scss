@@ -1,0 +1,213 @@
+@import "mixin";
+$font: Helvetica, Arial, sans-serif;
+$gradientStart: #ccc;
+$gradientStop: #999;
+
+.html5-crossword {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    @include border-radius(5px 5px 0 0);
+    @include box-shadow(0 0 5px rgba(0,0,0,.5));
+    @include inline-block();
+    font-family: $font;
+    overflow: hidden;
+}
+
+.html5-crossword * { padding: 0; margin: 0; }
+
+.html5-crossword-clue2.hide {
+    left: -100%;
+}
+
+.html5-crossword-clue2 {
+    position: absolute;
+    z-index: 10000;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, .8);
+    color: white;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    @include transition(left .3s ease-out);
+}
+
+.html5-crossword {
+    article {
+        @include linear-gradient($gradientStart, $gradientStop);
+        color: #222;
+        font-size: 1em;
+        height: 4em;
+        padding: 8px 30px 8px 8px;
+        position: relative;
+        text-align: left;
+        text-shadow: 0 1px 0 #bbb;
+    }
+
+    article button {
+        @include linear-gradient(#efefef, #aaa);
+        @include border-radius(4px);
+        background: url(gear.png) no-repeat center #efefef;
+        border: 1px solid #999;
+        cursor: pointer;
+        display: block;
+        height: 24px;
+        outline: none;
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        text-indent: -10000px;
+        width: 24px;
+    }
+
+
+    article button:active {
+        @include linear-gradient(#aaa, #efefef);
+        background: url(gear.png) no-repeat center #aaa;
+    }
+
+    canvas {
+        @include transition(all .3s ease-out);
+        background: #ddd;
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 400;
+    }
+
+
+    nav button.active {
+        background: #999;
+        color: #333;
+        text-shadow: 0 1px 0 #ddd;
+    }
+
+    .html5-crossword-board {
+        @include perspective(1000px);
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+    }
+}
+
+.html5-crossword-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: black;
+    @include transform(translate3d(0, 0, -100px));
+    @include opacity(0);
+    @include transition(all .3s ease-out);
+}
+
+.show-options .html5-crossword-overlay,
+.show-modal .html5-crossword-overlay {
+    @include transform(translate3d(0, 0, 0));
+    cursor: pointer;
+    z-index: 550;
+}
+
+.html5-crossword-options {
+    @include border-radius(2px);
+    @include box-shadow(0 0 10px black);
+    @include inline-block();
+    @include opacity(0);
+    @include transform(translate3d(0, 0, -100px));
+    @include transition(all .3s ease-out);
+    background: rgba(0, 0, 0, .95);
+    position: relative;
+    margin-top: 10px;
+    width: 300px;
+    z-index: 1;
+
+    ul li {
+        color: white;
+        list-style: none;
+        width: 100%;
+    }
+
+    ul li button {
+        @include transition(all .2s ease-in);
+        background: none;
+        border-bottom: 1px solid #333;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        outline: none;
+        padding: 10px;
+        width: 100%;
+    }
+
+    ul li button:hover {
+        background: rgba(100, 100, 100,.1);
+    }
+}
+
+.show-modal .html5-crossword-options {
+    color: white
+}
+
+.show-modal .html5-crossword-options ul,
+.show-options .html5-crossword-modal {
+    display: none;
+}
+
+.show-modal .html5-crossword-modal {
+    display: block;
+
+    p {
+        padding: 20px;
+        color: white;
+    }
+
+    h3 {
+        padding: 5px;
+    }
+}
+
+.html5-crossword-options .html5-crossword-confirm {
+    height: 0;
+
+    button {
+        @include transition(all .2s ease-out);
+        height: 0;
+        opacity: 0;
+        padding: 0;
+        width: 50%;
+        float: left;
+    }
+
+    .html5-crossword-yes {
+        background: rgba(255, 0, 0, .1);
+    }
+
+    .html5-crossword-no {
+        background: rgba(0, 255, 0, .1)
+    }
+
+    .html5-crossword-no:hover {
+        background: rgba(0, 255, 0, .2);
+    }
+
+    .html5-crossword-yes:hover {
+        background: rgba(255, 0, 0, .2);
+    }
+}
+
+.html5-crossword-board.confirm .html5-crossword-confirm  button{
+    height: auto;
+    padding: 10px;
+    opacity: 1;
+}
+
+.show-options .html5-crossword-options,
+.show-modal .html5-crossword-modal {
+    opacity: 1;
+    z-index: 600;
+    @include transform(translate3d(0,0,0));
+}

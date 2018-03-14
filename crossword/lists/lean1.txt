@@ -1,0 +1,15 @@
+#title: LEAN 1
+Kaizen:Continuous Improvement
+Inventory:Waste because of over production
+SOP:step-by-step indtruction
+Process:A series of actions or steps taken in order to achieve particular end
+Takttime:Rate at which a finished product needs to be completed in order to meet customer demand
+Sponsor:Role that will remove any barriers during Kaizen
+Defect:Reject part
+Waste:Non-Value Added
+Lean:Waste Elimination/Minimization
+Transportation:Waste because of unproper layout
+Improvement:Makes something better
+Andon:Visual Identification to notify the problem
+Pokayoke:Fool proof
+Deliverable:One of key step in implementing Kaizen Event
