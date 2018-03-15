@@ -20,3 +20,7 @@ Route::get('/kanboard', function () {
     //return view('welcome');
     return redirect()->away('http://belajarlean.com/kanboard/');
 });
+Route::get('/apps', function () {
+    //return view('welcome');
+    return redirect()->away('http://belajarlean.com/crossword/');
+});
