@@ -16,11 +16,16 @@ Route::get('/training', 'PagesController@training');
 Route::get('/training/lean', 'PagesController@lean');
 Route::get('/training/tpm', 'PagesController@tpm');
 Route::get('/training/sixsigma', 'PagesController@sixsigma');
+Route::get('/training/apps', 'PagesController@crossword');
 Route::get('/kanboard', function () {
     //return view('welcome');
     return redirect()->away('http://belajarlean.com/kanboard/');
 });
-Route::get('/apps', function () {
+Route::get('/crossword/lean1', function () {
     //return view('welcome');
-    return redirect()->away('http://belajarlean.com/crossword/');
+    return redirect()->away('http://belajarlean.com/crossword/?puzzle=lean1');
+});
+Route::get('/crossword/lean2', function () {
+    //return view('welcome');
+    return redirect()->away('http://belajarlean.com/crossword/?puzzle=lean2');
 });

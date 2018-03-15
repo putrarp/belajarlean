@@ -28,6 +28,10 @@ class PagesController extends Controller
         return view('pages.sixsigma');
     }
 
+    public function apps(){
+        return view('pages.crossword');
+    }
+
     /*public function kanboard(){
         return view('kanboard');
     }*/
