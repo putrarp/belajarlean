@@ -28,7 +28,7 @@ class PagesController extends Controller
         return view('pages.sixsigma');
     }
 
-    public function apps(){
+    public function crossword(){
         return view('pages.crossword');
     }
 
