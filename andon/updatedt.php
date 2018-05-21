@@ -15,7 +15,7 @@
         $sql = "INSERT INTO `record` (`ID`, `machineID`, `type`, `start`, `end`) VALUES (NULL, '$MC', '$laststatus', '$start', NOW())";
         $conn->query($sql);
     }
-    header("Location: ./apps.php"); 
-    exit;
+    // header("Location: ./apps.php"); 
+    // exit;
 
 ?>
