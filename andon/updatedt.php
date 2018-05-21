@@ -7,8 +7,7 @@
     $status = $_GET["status"];
     $laststatus = $_SESSION["laststatus"];
     $start = $_SESSION["lastupdate"];
-    $now = new DateTime(NOW());
-    $now->setTimezone(new DateTimeZone("Asia/Jakarta"));
+    $now = new DateTime(date("Y-m-d h:i:s"));
     $sql = "UPDATE `machine` SET `machineStatus`= $status ,`lastUpdate`= $now WHERE `ID` = $id";
     $conn->query($sql);
     if ($laststatus <> 1){
