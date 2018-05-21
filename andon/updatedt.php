@@ -2,6 +2,7 @@
     session_start();
     $MC = $_SESSION["MC"];
 
+    $end->setTimezone(new DateTimeZone('Asia/Jakarta'));
     date_default_timezone_set("Asia/Jakarta");
     include "connection.php";
     $id = $_GET["mc"];
