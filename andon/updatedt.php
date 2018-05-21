@@ -8,10 +8,11 @@
     $laststatus = $_SESSION["laststatus"];
     $start = $_SESSION["lastupdate"];
     $now = new DateTime(date("Y-m-d h:i:s"));
-    $sql = "UPDATE `machine` SET `machineStatus`= $status ,`lastUpdate`= '$now' WHERE `ID` = $id";
+    $fdate = $now->format('Y-m-d h:i:s');
+    $sql = "UPDATE `machine` SET `machineStatus`= $status ,`lastUpdate`= '$fdate' WHERE `ID` = $id";
     $conn->query($sql);
     if ($laststatus <> 1){
-        $sql = "INSERT INTO `record` (`ID`, `machineID`, `type`, `start`, `end`) VALUES (NULL, '$MC', '$laststatus', '$start', '$now')";
+        $sql = "INSERT INTO `record` (`ID`, `machineID`, `type`, `start`, `end`) VALUES (NULL, '$MC', '$laststatus', '$start', '$fdate')";
         $conn->query($sql);
     }
     header("Location: ./apps.php"); 
