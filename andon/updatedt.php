@@ -2,7 +2,6 @@
     session_start();
     $MC = $_SESSION["MC"];
     date_default_timezone_set("Asia/Jakarta");
-    echo date_default_timezone_get();
     include "connection.php";
     $id = $_GET["mc"];
     $status = $_GET["status"];
@@ -16,7 +15,7 @@
         $sql = "INSERT INTO `record` (`ID`, `machineID`, `type`, `start`, `end`) VALUES (NULL, '$MC', '$laststatus', '$start', NOW())";
         $conn->query($sql);
     }
-    // header("Location: ./apps.php"); 
-    // exit;
+    header("Location: ./apps.php"); 
+    exit;
 
 ?>
